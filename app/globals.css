@@ -2,11 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.cross{
-    @apply text-pColor text-xl
+.cross {
+  @apply text-pColor text-xl;
 }
 
-.menu{
-    @apply text-pColor text-2xl
+.menu {
+  @apply text-pColor text-2xl;
+}
+
+.price-switch {
+  @apply block w-[60px] h-[30px] rounded-full relative cursor-pointer;
+}
+
+.price-checkbox {
+  @apply opacity-0 h-0 w-0;
+}
+
+.switch-slider {
+  @apply absolute top-0 left-0 w-[60px] h-[30px] rounded-full bg-pColor;
+}
+
+.switch-slider:is(:hover, :focus-visible) {
+  @apply opacity-70;
+}
+
+.switch-slider::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 20px;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  background-color: white;
+  transform: translateX(calc(100% + 10px));
+  transition: 0.3s ease;
+  -webkit-transform: translateX(calc(100% + 10px));
+  -moz-transform: translateX(calc(100% + 10px));
+  -ms-transform: translateX(calc(100% + 10px));
+  -o-transform: translateX(calc(100% + 10px));
+}
+
+.price-checkbox:checked + .switch-slider::before {
+  transform: translateX(0%);
 }
