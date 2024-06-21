@@ -7,7 +7,7 @@ import { useState } from "react";
 const page = () => {
   const [selectTime, setSelectTime] = useState(false);
   return (
-    <Flex className="py-[100px] flex-col justify-center items-center">
+    <Flex className="py-[120px] flex-col justify-center items-center">
       <h2 className="text-5xl font-bold text-pColor text-center lg:w-[670px] m-auto ">Buy a domain and everything else you need</h2>
       <h3 className=" text-2xl text-center text-tColor mt-9 mb-14">Choose the package that suits you</h3>
       <Flex className={' items-center gap-x-5'}>
