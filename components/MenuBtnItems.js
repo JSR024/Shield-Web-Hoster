@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const MenuBtnItems = () => {
   return (
-    <ul className=' text-lg absolute right-3 top-20 bg-pColor font-medium  text-white text-right w-[50%] cursor-pointer py-2 rounded-l-lg'>
+    <ul className=' text-lg absolute right-3 top-20 bg-pColor font-medium  text-white text-right w-[50%] cursor-pointer py-2 rounded-l-lg z-10'>
       <li className="hover:text-sColor transition-all py-4 pr-2 hover:pr-5">
         <Link href={"/"}>Home</Link>
       </li>
